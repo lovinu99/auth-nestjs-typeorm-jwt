@@ -1,0 +1,21 @@
+{
+    "type": "mssql",
+    "host": "mssql-46559-0.cloudclusters.net",
+    "port": 19857,
+    "username": "admin",
+    "password": "adminADMIN1",
+    "database": "test",
+    "entities": [
+        "dist/**/*.entity{.ts,.js}"
+    ],
+    "migrations": [
+        "src/migration/*.ts"
+    ],
+    "cli": {
+        "migrationsDir": "src/migration"
+    },
+    "extra": {
+        "validateConnection": true,
+        "trustServerCertificate": true
+    }
+}
